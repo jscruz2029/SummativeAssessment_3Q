@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us | Berry Catch</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd6e0, #f8edff, #d0f4ff);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Floating berries */
+
+.floating {
+    position: fixed;
+    font-size: 28px;
+    opacity: 0.7;
+    animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(100vh); }
+    100% { transform: translateY(-10vh); }
+}
+
+/* Main Card */
+
+.about-wrapper {
+    padding: 60px 20px;
+}
+
+.glass-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 35px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 25px 60px rgba(255, 105, 180, 0.35);
+}
+
+h1 {
+    font-size: 55px;
+    color: #ff4d6d;
+    text-shadow: 0 0 15px rgba(255, 77, 109, 0.5);
+}
+
+h2 {
+    margin-top: 35px;
+    color: #c9184a;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff8fab, #ff4d6d);
+    display: block;
+    margin: 8px auto;
+    border-radius: 5px;
+}
+
+.team-image {
+    width: 280px;
+    border-radius: 25px;
+    margin: 30px 0;
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.4);
+    transition: 0.4s;
+}
+
+.team-image:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.about-text {
+    font-size: 18px;
+    color: #6d2e46;
+    line-height: 1.7;
+}
+
+.names {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #ff4d6d;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff8fab, #ff4d6d);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(255, 77, 109, 0.4);
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Sparkles */
+
+.sparkle {
+    position: absolute;
+    font-size: 18px;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating berries -->
+<div class="floating" style="left:10%;">🍓</div>
+<div class="floating" style="left:30%; animation-delay:2s;">🫐</div>
+<div class="floating" style="left:70%; animation-delay:4s;">🍑</div>
+<div class="floating" style="left:85%; animation-delay:1s;">🍓</div>
+
+<div class="about-wrapper">
+<div class="glass-card">
+
+<h1>About Berry Catch 🍓</h1>
+
+<img src="https://github.com/jscruz2029/aboutus/blob/main/Unknown.jpeg?raw=true" 
+     alt="Our Team" 
+     class="team-image">
+
+<div class="about-text">
+<p>
+Berry Catch is a pastel inspired arcade game where players control a basket to catch falling berries before they hit the ground. The goal is simple but exciting. Catch as many as possible while avoiding too many misses.
+</p>
+
+<p>
+The game is inspired by classic catching arcade games and soft aesthetic browser mini games. We wanted to combine cute visuals, glowing effects, and relaxing colors with competitive gameplay.
+</p>
+
+<h2>Meet the Developers 💗</h2>
+
+<div class="names">
+Jan Angela Ysobel S. Cruz<br>
+Isha Dyanne Dela Cruz<br>
+Nicole Camille Garcia
+</div>
+
+<h2>About Us 🍑</h2>
+
+<p>
+We love designing colorful interactive projects and exploring creative web development. This project helped us improve our JavaScript logic, UI styling, and teamwork skills. Berry Catch represents our shared passion for fun and aesthetic design.
+</p>
+
+<a href="index.html" class="nav-btn">Back to Game</a>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
