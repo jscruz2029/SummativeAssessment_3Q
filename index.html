@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry Catch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <h1>Berry Catch</h1>
+        <p class="subtitle">Catch the berries before they fall! Use the arrow keys to move ꨄ︎</p>
+
+        <div class="modes">
+            <button onclick="setMode('easy')">Easy</button>
+            <button onclick="setMode('medium')">Average</button>
+            <button onclick="setMode('hard')">Hard</button>
+        </div>
+
+        <div id="gameArea">
+            <div id="basket">🧺</div>
+        </div>
+
+        <div class="info">
+            <span>Score: <span id="score">0</span></span>
+            <span>Missed: <span id="miss">0</span></span>
+        </div>
+
+        <div class="controls">
+            <button class="main-btn" onclick="startGame()">Start</button>
+            <button class="main-btn reset" onclick="resetGame()">Reset</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

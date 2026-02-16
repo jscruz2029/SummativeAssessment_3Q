@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd6e0, #f8edff, #d0f4ff);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.game-wrapper {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 52px;
+    color: #ff4d6d;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #6d2e46;
+    margin-bottom: 15px;
+}
+
+.modes button {
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #ff4d6d;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 77, 109, 0.3);
+    transition: 0.3s;
+}
+
+.modes button:hover {
+    background: #ff8fab;
+    color: white;
+}
+
+#gameArea {
+    width: 420px;
+    height: 420px;
+    margin: 20px auto;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+
+#basket {
+    position: absolute;
+    bottom: 20px;
+    left: 170px;
+    font-size: 45px;
+    transition: 0.1s;
+}
+
+
+.berry {
+    position: absolute;
+    font-size: 32px;
+    animation: berryGlow 2s infinite alternate;
+}
+
+@keyframes berryGlow {
+    from { filter: drop-shadow(0 0 5px #ff99ac); }
+    to { filter: drop-shadow(0 0 15px #ff4d6d); }
+}
+
+
+.info {
+    font-size: 18px;
+    color: #ff4d6d;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.main-btn {
+    padding: 12px 35px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff8fab, #ff4d6d);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 77, 109, 0.4);
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: scale(1.08);
+}
+
+.reset {
+    background: linear-gradient(45deg, #bdb2ff, #a0c4ff);
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #c9184a;
+    font-weight: 600;
+}
+
+
